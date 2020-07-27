@@ -30,7 +30,7 @@ use the more verbose mount instead:
 ### 2 - Download additional files
 
 On the first run, you need to download some CSS and JS files with bower (
-as well as everytime there are updates):
+as well as every time there are updates):
 
      docker exec -ti wger.devel python3 manage.py bower install
 
