@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Alex Deneuvillers <alex.deneuvillers@gmail.com>, 2017
 # Alexis <d3.alexisferreira@yahoo.fr>, 2014
@@ -577,7 +577,7 @@ msgstr "Quelque-chose s'est passé et a causé un erreur."
 #, python-format
 msgid ""
 "You are\n"
-"browsing the site as the user \"%(current_user)s\", all actions are performed on their data.\n"
+"browsing the site as the user \"%(current_user)s\", all actions are performed on his data.\n"
 "    "
 msgstr "Vous êtes\nconnectés en tant que \"%(current_user)s\", toutes les actions seront faîtes sur ses\ndonnées."
 
@@ -3882,6 +3882,9 @@ msgstr "miles"
 
 msgid "Minutes"
 msgstr "minutes"
+
+msgid "Repetitions"
+msgstr "Répétitions"
 
 msgid "Seconds"
 msgstr "secondes"
