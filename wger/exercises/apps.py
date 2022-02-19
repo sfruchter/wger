@@ -27,4 +27,5 @@ class ExerciseConfig(AppConfig):
         from actstream import registry
         registry.register(self.get_model('Exercise'))
         registry.register(self.get_model('ExerciseBase'))
+        registry.register(self.get_model('ExerciseComment'))
         registry.register(self.get_model('ExerciseImage'))
