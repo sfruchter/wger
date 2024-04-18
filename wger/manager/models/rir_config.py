@@ -20,7 +20,7 @@ from wger.manager.models import AbstractChangeConfig
 
 class RiRConfig(AbstractChangeConfig):
     """
-    Model for a routine
+    Configuration model for the number of RiR for a workout set
     """
 
     pass
