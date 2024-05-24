@@ -94,3 +94,12 @@ class SearchExerciseApiTestCase(BaseTestCase, ApiBaseTestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data['suggestions']), 4)
+
+    def test_search_all_languages(self):
+        """
+        Passing different language codes works correctly
+        """
+        response = self.client.get(self.url + '?term=demo&language=*')
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data['suggestions']), 4)
