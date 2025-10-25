@@ -32,6 +32,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='weightentry',
             name='uuid',
-            field=models.UUIDField(default=uuid.uuid4, editable=False, null=False),
+            field=models.UUIDField(default=uuid.uuid4, editable=True, null=False),
         ),
     ]

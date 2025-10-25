@@ -52,7 +52,7 @@ def handle_create(payload: dict[str, any], user_id: int) -> None:
     )
     serializer = WeightEntrySerializer(data=payload)
     if serializer.is_valid():
-        serializer.save()
+        serializer.save(user_id=user_id)
     else:
         logger.warning(f'PowerSync create validation failed: {serializer.errors}')
 
