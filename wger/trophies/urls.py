@@ -19,11 +19,18 @@ from django.urls import re_path
 # wger
 from wger.core.views.react import ReactView
 
+# Local
+from .views import TrophiesOverview
 
 urlpatterns = [
     re_path(
         '',
         ReactView.as_view(),
         name='overview',
+    ),
+    re_path(
+        'admin/overview/',
+        TrophiesOverview.as_view(),
+        name='admin-overview',
     ),
 ]
