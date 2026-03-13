@@ -34,9 +34,7 @@ logger = logging.getLogger(__name__)
 
 def handle_update_log(payload: dict[str, any], user_id: int) -> None:
     """Handle a push event from PowerSync"""
-    logger.debug(
-        f'Received PowerSync payload for update: {payload}',
-    )
+    logger.debug(f'Received PowerSync payload for update: {payload}')
     entry = WorkoutLog.objects.get(uuid=payload['id'], user_id=user_id)
 
     if not entry:
@@ -67,9 +65,7 @@ def handle_create_log(payload: dict[str, any], user_id: int) -> None:
 
 def handle_delete_log(payload: dict[str, any], user_id: int) -> None:
     """Handle a delete event from PowerSync"""
-    logger.debug(
-        f'Received PowerSync payload for delete: {payload}',
-    )
+    logger.debug(f'Received PowerSync payload for delete: {payload}')
     entry = WorkoutLog.objects.get(uuid=payload['id'], user_id=user_id)
     if not entry:
         logger.warning(f'WorkoutLog with UUID {payload["uuid"]} not found for delete.')
