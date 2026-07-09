@@ -278,9 +278,10 @@ def reset_user_password(request, user_pk):
         )
         return render(
             request,
-            'delete.html',
+            'confirm.html',
             {
-                'title': _('Reset the password for %(user)s?') % {'user': user},
+                'title': _('Reset the password for this user?'),
+                'confirm_message': str(user),
                 'form': form,
             },
         )

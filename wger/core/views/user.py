@@ -336,7 +336,7 @@ class UserActivationConfirmMixin:
     (e.g. POST), not GET.
     """
 
-    confirm_message = ''
+    confirm_title = ''
     success_message = ''
     new_is_active = None
 
@@ -347,14 +347,14 @@ class UserActivationConfirmMixin:
         form.helper.form_method = 'post'
         form.helper.form_action = request.path
         form.helper.layout = Layout(
-            ButtonHolder(Submit('submit', self.confirm_message, css_class='btn-warning btn-block'))
+            ButtonHolder(Submit('submit', self.confirm_title, css_class='btn-warning btn-block'))
         )
         return render(
             request,
-            'delete.html',
+            'confirm.html',
             {
-                'title': self.confirm_message,
-                'delete_message': str(edit_user),
+                'title': self.confirm_title,
+                'confirm_message': str(edit_user),
                 'form': form,
             },
         )
@@ -379,7 +379,7 @@ class UserDeactivateView(
 
     model = User
     permission_required = ('gym.manage_gym', 'gym.manage_gyms', 'gym.gym_trainer')
-    confirm_message = gettext_lazy('Deactivate this user?')
+    confirm_title = gettext_lazy('Deactivate this user?')
     success_message = gettext_lazy('The user was successfully deactivated')
     new_is_active = False
 
@@ -427,7 +427,7 @@ class UserActivateView(
 
     model = User
     permission_required = ('gym.manage_gym', 'gym.manage_gyms', 'gym.gym_trainer')
-    confirm_message = gettext_lazy('Activate this user?')
+    confirm_title = gettext_lazy('Activate this user?')
     success_message = gettext_lazy('The user was successfully activated')
     new_is_active = True
 
