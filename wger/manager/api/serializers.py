@@ -409,8 +409,10 @@ class WorkoutDayDataDisplayModeSerializer(serializers.Serializer):
 
     iteration = serializers.IntegerField()
     date = serializers.DateField()
-    label = serializers.CharField()
-    day = DaySerializer()
+    # Both null on the placeholder entries a fit_in_week routine pads the rest
+    # of the week with: there is no day, and labels are per-date and sparse.
+    label = serializers.CharField(allow_null=True)
+    day = DaySerializer(allow_null=True)
     slots = SlotDataSerializer(many=True, source='slots_display_mode')
 
 
@@ -421,8 +423,9 @@ class WorkoutDayDataGymModeSerializer(serializers.Serializer):
 
     iteration = serializers.IntegerField()
     date = serializers.DateField()
-    label = serializers.CharField()
-    day = DaySerializer()
+    # See the display-mode serializer above: both are null on padding entries.
+    label = serializers.CharField(allow_null=True)
+    day = DaySerializer(allow_null=True)
     slots = SlotDataSerializer(many=True, source='slots_gym_mode')
 
 
