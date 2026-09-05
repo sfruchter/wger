@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: wger Workout Manager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-17 07:28+0000\n"
-"PO-Revision-Date: 2026-09-05 08:45+0000\n"
+"PO-Revision-Date: 2026-09-06 09:51+0000\n"
 "Last-Translator: Борис Броварчук <digestivedigestive069@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/wger/web/uk/>\n"
 "Language: uk\n"
@@ -36,7 +36,7 @@ msgid ""
 "registered users to this gym and update all existing users without a gym."
 msgstr ""
 "Виберіть тренажерний зал за замовчуванням для цієї установки. Цей зал буде "
-"призначений всім новим зареєстрованим користувачам і для всіх існуючих "
+"призначений всім новим зареєстрованим користувачам і для всіх наявних "
 "користувачів без тренажерного залу."
 
 #: config/views/gym_config.py:46 core/templates/language/view.html:64
@@ -193,7 +193,7 @@ msgstr ""
 
 #: core/models/license.py:40
 msgid "Short name, e.g. CC-BY-SA 3"
-msgstr "Коротке ім'я, н-д CC-BY-SA 3"
+msgstr "Коротка назва, наприклад, CC-BY-SA 3"
 
 #: core/models/license.py:45
 msgid "Link"
@@ -245,8 +245,8 @@ msgid ""
 "Check to activate automatic reminders for workouts. You need to provide a "
 "valid email for this to work."
 msgstr ""
-"Позначте для активації автоматичних нагадувань тренування. Для роботи цієї "
-"функції необхідно вказати дійсну адресу електронної пошти."
+"Позначте для активації автоматичних нагадувань про тренування.. Для роботи "
+"цієї функції необхідно вказати дійсну адресу електронної пошти."
 
 #: core/models/profile.py:130
 msgid "Remind before expiration"
@@ -277,8 +277,9 @@ msgid ""
 "Language to use when sending you email notifications, e.g. email reminders "
 "for workouts. This does not affect the language used on the website."
 msgstr ""
-"Мова, яка використовується при надсиланні вам сповіщень електронною поштою, "
-"наприклад, нагадування про тренування. Це не стосується мови вебсайту."
+"Мова, яка використовується під час надсилання вам сповіщень електронною "
+"поштою, наприклад, нагадування про тренування. Це не стосується мови "
+"вебсайту."
 
 #: core/models/profile.py:192 gym/views/export.py:65
 msgid "Age"
@@ -1454,7 +1455,7 @@ msgstr "Альтернативна назва"
 
 #: exercises/models/muscle.py:48
 msgid "A more basic name for the muscle"
-msgstr "Більш основна назва м'язів"
+msgstr "Простіша назва м'яза"
 
 #: exercises/models/video.py:52
 #, python-format
@@ -1467,7 +1468,7 @@ msgstr "Тип файлу не підтримується"
 
 #: exercises/models/video.py:72
 msgid "File is not a valid video"
-msgstr "Файл не є припустимим відеофайлом"
+msgstr "Файл не є коректним відеофайлом"
 
 #: exercises/templates/equipment/admin-overview.html:4
 msgid "Equipment list"
@@ -1614,7 +1615,7 @@ msgstr "Також буде видалено всі вправи цієї кат
 
 #: exercises/views/equipment.py:92
 msgid "Add new equipment"
-msgstr "Додайте нове обладнання"
+msgstr "Додати нове обладнання"
 
 #: exercises/views/equipment.py:104 exercises/views/equipment.py:115
 msgid "Delete equipment?"
@@ -2541,8 +2542,8 @@ msgstr ""
 "Після того, як ви надішлете форму, адміністратори отримають сповіщення. \n"
 "Після перегляду вона буде додана до бази даних. \n"
 "Доки це не станеться, її не буде видно в огляді або в пошуку. \n"
-"Якщо ви додали електронну пошту при реєстрації, ви отримаєте сповіщення про "
-"успішне завершення процесу."
+"Якщо ви додали електронну пошту під час реєстрації, ви отримаєте сповіщення "
+"про успішне завершення процесу."
 
 #: nutrition/templates/ingredient/overview.html:32
 #: nutrition/templates/ingredient/overview.html:104
@@ -2680,7 +2681,7 @@ msgid ""
 "The base caloric intake is the amount of calories your metabolism\n"
 "needs based on your level of physical activity."
 msgstr ""
-"Базове споживання калорій - це кількість калорій яку потребує Ваш\n"
+"Базове споживання калорій - це кількість калорій, яку потребує Ваш\n"
 "метаболізм залежно від рівня вашої фізичної активності."
 
 #: nutrition/templates/rate/form.html:82
@@ -2711,7 +2712,7 @@ msgstr "Додати додаткові калорії в добову кіль�
 
 #: nutrition/templates/rate/form.html:111
 msgid "Save total calories to profile"
-msgstr "Зберегти загальну кількість калорій в профайл"
+msgstr "Зберегти загальну кількість калорій у профіль"
 
 #: nutrition/templates/rate/form.html:122
 msgid ""
@@ -2755,7 +2756,7 @@ msgstr "Відсоток енергії"
 
 #: nutrition/views/plan.py:240
 msgid "g per body kg"
-msgstr "г на кг маси тіли"
+msgstr "г на кг маси тіла"
 
 #: nutrition/views/unit_ingredient.py:64
 msgid "Add a new weight unit"
@@ -2852,7 +2853,7 @@ msgstr "Удосконалюйте вправи"
 
 #: software/templates/about_us.html:82
 msgid "Contribute new exercises, and edit or translate the existing ones."
-msgstr "Створюйте нові вправи та редагуйте або перекладайте існуючі."
+msgstr "Створюйте нові вправи та редагуйте або перекладайте наявні."
 
 #: software/templates/about_us.html:85
 msgid "Translate the application"
@@ -3046,7 +3047,7 @@ msgstr "Запишіть свою вагу"
 
 #: software/templates/features.html:265
 msgid "Keep a photo log to see your progress"
-msgstr "Ведіть фото-журнал, щоб бачити свій прогрес"
+msgstr "Ведіть фотожурнал, щоб бачити свій прогрес"
 
 #: software/templates/features.html:268
 msgid "Use the calendar view to see past entries"
