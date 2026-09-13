@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: wger Workout Manager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-17 07:28+0000\n"
-"PO-Revision-Date: 2026-09-13 05:38+0000\n"
+"PO-Revision-Date: 2026-09-13 15:25+0000\n"
 "Last-Translator: Борис Броварчук <digestivedigestive069@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/wger/web/uk/>\n"
 "Language: uk\n"
@@ -156,7 +156,7 @@ msgstr "Підтвердити"
 msgid ""
 "Your account has no password. Type the username \"{username}\" to confirm."
 msgstr ""
-"Ваш акаунт не має пароля. Введіть ім'я користувача «{username}» для "
+"Ваш обліковий запис не має пароля. Введіть ім'я користувача «{username}» для "
 "підтвердження."
 
 #: core/forms.py:313
@@ -895,8 +895,8 @@ msgid ""
 "flow without logging in interactively each time."
 msgstr ""
 "Токени оновлення дозволяють скриптам і CLI-інструментам взаємодіяти з API "
-"wger за допомогою потоку JWT без необхідності щоразу входити в акаунт "
-"інтерактивно."
+"wger за допомогою потоку JWT без необхідності щоразу входити в обліковий "
+"запис інтерактивно."
 
 #: core/templates/user/api_key.html:35
 msgid "Generate a new refresh token"
@@ -1067,9 +1067,9 @@ msgid ""
 "and can't be undone. "
 msgstr ""
 "Ця дія видалить обліковий запис користувача \"%(username)s\" .\n"
-"Це також безповоротно видалить всі пов'язані з нею дані (тренування, журнали "
+"Це також безповоротно видалить всі пов'язані з ним дані (тренування, журнали "
 "тощо)\n"
-"і не може бути скасована. "
+"і цю дію неможливо скасувати. "
 
 #: core/templates/user/overview.html:28 core/templates/user/overview.html:78
 #: core/templates/user/overview.html:126 core/templates/user/overview.html:162
@@ -2148,15 +2148,15 @@ msgstr "Воїн вихідного дня"
 
 #: i18n.tpl:51
 msgid "Elephant lifter"
-msgstr "Підйомник слонів"
+msgstr "Важкоатлет (рівень: слон)"
 
 #: i18n.tpl:52
 msgid "Bus lifter"
-msgstr "Підйомник автобуса"
+msgstr "Підкорювач ваги автобуса"
 
 #: i18n.tpl:53
 msgid "Plane lifter"
-msgstr "Здатний підняти літак"
+msgstr "Атлет-титан"
 
 #: i18n.tpl:54
 msgid "Blue whale lifter"
@@ -2426,7 +2426,7 @@ msgid ""
 "Please click the link to access the application and enter a new one."
 msgstr ""
 "Ваш останній запис ваги від %(date)s (%(days)s днів тому).\n"
-"Натисніть посилання для доступу до застосунку та введіть нову."
+"Натисніть посилання для доступу до застосунку та введіть нове значення."
 
 #: manager/templates/workout/email_weight_reminder.tpl:8
 msgid ""
@@ -2857,7 +2857,7 @@ msgstr "Створюйте нові вправи та редагуйте або 
 
 #: software/templates/about_us.html:85
 msgid "Translate the application"
-msgstr "Перекласти програму"
+msgstr "Перекласти застосунок"
 
 #: software/templates/about_us.html:86
 msgid ""
@@ -3142,11 +3142,11 @@ msgstr "Панель"
 
 #: software/templates/features.html:485
 msgid "Workout routines"
-msgstr "Процедури тренувань"
+msgstr "Програми тренувань"
 
 #: software/templates/features.html:491
 msgid "Discord"
-msgstr "Дискорд"
+msgstr "Discord"
 
 #: software/templates/features.html:506
 msgid "Software"
