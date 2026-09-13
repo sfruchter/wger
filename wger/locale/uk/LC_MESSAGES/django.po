@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: wger Workout Manager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-17 07:28+0000\n"
-"PO-Revision-Date: 2026-09-13 19:20+0000\n"
+"PO-Revision-Date: 2026-09-14 19:51+0000\n"
 "Last-Translator: Борис Броварчук <digestivedigestive069@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/wger/web/uk/>\n"
 "Language: uk\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: config/models/gym_config.py:46 gym/templates/gym/list.html:56
 msgid "Default gym"
-msgstr "Тренажерний зал за замовчуванням"
+msgstr "Тренажерний зал за умовчанням"
 
 #: config/models/gym_config.py:48
 msgid ""
@@ -851,7 +851,7 @@ msgstr "Закрити"
 msgid ""
 "You are using a guest account, data entered will be deleted after a week."
 msgstr ""
-"Ви використовуєте обліковий запис гостя, введені дані будуть видалені через "
+"Ви використовуєте обліковий запис гостя, введені дані буде вилучено через "
 "тиждень."
 
 #: core/templates/template.html:108
@@ -1321,8 +1321,7 @@ msgstr "Небезпечна зона"
 
 #: core/templates/user/preferences.html:79
 msgid "Your account and all training data will be permanently deleted."
-msgstr ""
-"Ваш обліковий запис та всі дані про тренування будуть видалені назавжди."
+msgstr "Ваш обліковий запис та всі дані про тренування буде вилучено назавжди."
 
 #: core/templatetags/wger_extras.py:108 i18n.tpl:39
 msgid "kg"
@@ -2020,7 +2019,7 @@ msgstr "Підколінні сухожилля"
 
 #: i18n.tpl:16
 msgid "Incline bench"
-msgstr "Лавка похила"
+msgstr "Похила лавка"
 
 #: i18n.tpl:17
 msgid "Kettlebell"
@@ -3222,7 +3221,7 @@ msgid ""
 "Manager."
 msgstr ""
 "Скористайтеся цим полем імпорту, щоб імпортувати ваші журнали ваги\n"
-"в Workout Manager."
+"у Workout Manager."
 
 #: weight/templates/import_csv_form.html:18
 msgid ""
